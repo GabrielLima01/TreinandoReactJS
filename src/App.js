@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
+import List from './components/List';
+
 
 function App() {
+
+function sum(a, b){
+  return a + b
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Testando o css</h1>
+      <Frase />
+      <SayMyName nome="Gabriel"/>
+      <Pessoa 
+          nome="Josevaldo"
+          idade="20"
+          profissao="programador"
+          foto="https://via.placeholder.com/150"
+      />
+      <List />
     </div>
   );
 }
